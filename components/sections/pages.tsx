@@ -17,7 +17,7 @@ export function Pages() {
     <section id="pages" className="relative py-32 md:py-48">
       <div className="relative mx-auto max-w-7xl px-6 md:px-10">
         <SectionHeader
-          index="03"
+          index="04"
           kicker="Pages · Archive"
           title="Room for the work around the work."
           subtitle="A gallery for moments, a blog for updates, and a credentials page for certifications and experience as they grow."

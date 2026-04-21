@@ -92,7 +92,7 @@ export function Philosophy() {
       >
         <div className="flex items-center gap-4 font-mono text-[10px] uppercase tracking-[0.28em] text-bone-400">
           <span className="h-px w-10 bg-white/20" />
-          <span className="text-ember">§ 07 · Philosophy</span>
+          <span className="text-ember">§ 08 · Philosophy</span>
           <span className="h-px flex-1 bg-white/10" />
         </div>
 

@@ -29,6 +29,7 @@ saiyid-gilani/
 │   │   ├── hero.tsx             # wow-moment entrance
 │   │   ├── about.tsx            # identity + how-I-think schematic
 │   │   ├── projects.tsx         # NGSP + MedTrack + WeaveWise showcases
+│   │   ├── skills.tsx           # technical skill stack
 │   │   ├── pages.tsx            # gallery/blog/credentials links
 │   │   ├── systems.tsx          # interactive principles grid
 │   │   ├── timeline.tsx         # mission-log trajectory
@@ -45,7 +46,8 @@ saiyid-gilani/
 │       └── status-pill.tsx      # live-status pills (signal / ember / bone)
 ├── public/
 │   ├── gallery/             # future gallery images
-│   └── papers/              # add NGSP PDF as `ngsp.pdf`
+│   ├── papers/ngsp.pdf      # NGSP paper PDF
+│   └── resume.pdf           # resume PDF
 ├── lib/
 │   ├── content.ts           # single source of truth for all copy
 │   └── utils.ts             # cn() class merger, clamp
@@ -113,10 +115,11 @@ All copy lives in `lib/content.ts` so you can iterate without touching component
 - `identity` — name, role, email
 - `achievements` — status pills in the hero
 - `projects` — NGSP, MedTrack, and WeaveWise
+- `technicalSkillGroups` — skills shown on the homepage and credentials page
 - `sitePages` — links for Gallery, Blog, and Certifications & Experience
 - `galleryItems` — gallery entries
 - `blogPosts` — blog/update entries
-- `certifications` / `experience` — credentials page entries
+- `education` / `certifications` / `experience` / `resumeProjects` / `extracurriculars` — credentials page entries
 - `systemsThoughts` — principles cards
 - `timeline` — mission log entries
 - `dashboardMetrics` / `interests` — telemetry panel
@@ -128,7 +131,8 @@ All copy lives in `lib/content.ts` so you can iterate without touching component
 - **Loading screen** only shows once per session (`sessionStorage` flag). Reloads don't re-punish the visitor.
 - **Side nav** (right edge, desktop) uses `IntersectionObserver` to track the current section.
 - **GitHub activity** pulls public data from `https://github.com/sdg5-hub`.
-- **NGSP paper link** points to `/papers/ngsp.pdf`; put the PDF at `public/papers/ngsp.pdf` when it is ready to publish.
+- **NGSP paper link** points to `/papers/ngsp.pdf`.
+- **Resume link** points to `/resume.pdf`.
 
 ---
 

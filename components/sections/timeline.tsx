@@ -16,7 +16,7 @@ export function Timeline() {
     <section id="timeline" className="relative py-32 md:py-48">
       <div className="relative mx-auto max-w-6xl px-6 md:px-10">
         <SectionHeader
-          index="05"
+          index="06"
           kicker="Mission Log · Progression"
           title="Not a résumé. A trajectory."
           subtitle="Each entry is a decision point — the moments where a path I chose shaped the next thing I built."

@@ -16,13 +16,14 @@ const NAV = [
   { id: "hero", label: "00 · entry" },
   { id: "about", label: "01 · identity" },
   { id: "projects", label: "02 · flagship" },
-  { id: "pages", label: "03 · pages" },
-  { id: "systems", label: "04 · systems" },
-  { id: "timeline", label: "05 · log" },
-  { id: "dashboard", label: "06 · telemetry" },
-  { id: "philosophy", label: "07 · philosophy" },
-  { id: "personal", label: "08 · dimension" },
-  { id: "contact", label: "09 · signal" },
+  { id: "skills", label: "03 · stack" },
+  { id: "pages", label: "04 · pages" },
+  { id: "systems", label: "05 · systems" },
+  { id: "timeline", label: "06 · log" },
+  { id: "dashboard", label: "07 · telemetry" },
+  { id: "philosophy", label: "08 · philosophy" },
+  { id: "personal", label: "09 · dimension" },
+  { id: "contact", label: "10 · signal" },
 ];
 
 export function SideNav() {

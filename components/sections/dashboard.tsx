@@ -23,7 +23,7 @@ export function Dashboard() {
     <section id="dashboard" className="relative py-32 md:py-48">
       <div className="relative mx-auto max-w-7xl px-6 md:px-10">
         <SectionHeader
-          index="06"
+          index="07"
           kicker="Telemetry · Signal"
           title="A personal control center."
           subtitle="A snapshot of the inputs, outputs, and shape of how I spend my time. No vanity metrics — just the ones I actually care about."

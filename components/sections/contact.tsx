@@ -34,7 +34,7 @@ export function Contact() {
           transition={{ duration: 0.9 }}
           className="flex items-center gap-4 font-mono text-[10px] uppercase tracking-[0.28em] text-bone-400"
         >
-          <span className="text-signal">§ 09 · Open Channel</span>
+          <span className="text-signal">§ 10 · Open Channel</span>
           <span className="h-px flex-1 bg-white/10" />
           <span>end-of-page · ready to build</span>
         </motion.div>

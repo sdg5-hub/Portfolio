@@ -11,6 +11,8 @@ export const identity = {
   institution: "Computer Science & Electrical Engineering — Drexel University",
   location: "Philadelphia, PA",
   email: "sg3949@drexel.edu",
+  resumeEmail: "saiyidosamah.gilani31@qmail.cuny.edu",
+  phone: "+1 (856) 472-5001",
   tagline:
     "I build systems that earn their trust at the intersection of AI, engineering, and consequence.",
 };
@@ -20,7 +22,105 @@ export const profileLinks = {
   linkedin: "https://www.linkedin.com/in/saiyid-o-gilani-6764751b5/",
   instagram: "https://www.instagram.com/saiyidogilani",
   x: "https://x.com/saiyidogilani",
+  resume: "/resume.pdf",
 };
+
+export const technicalSkillGroups = [
+  {
+    title: "Languages",
+    skills: [
+      "Python",
+      "JavaScript",
+      "TypeScript",
+      "C++",
+      "SQL",
+      "Java",
+      "Go",
+      "C",
+      "C#",
+      "Rust",
+      "Bash",
+      "R",
+      "LaTeX",
+    ],
+  },
+  {
+    title: "Frontend / Product",
+    skills: [
+      "React",
+      "Next.js",
+      "Tailwind",
+      "Vercel",
+      "HTML5",
+      "CSS3",
+      "Vue.js",
+      "Svelte",
+      "Redux",
+      "Bootstrap",
+      "Framer",
+      "Figma",
+    ],
+  },
+  {
+    title: "Backend / Infrastructure",
+    skills: [
+      "FastAPI",
+      "Node.js",
+      "PostgreSQL",
+      "Docker",
+      "Git",
+      "Express.js",
+      "Django",
+      "Flask",
+      "MongoDB",
+      "MongoDB Atlas",
+      "Redis",
+      "Supabase",
+      "Firebase",
+      "Nginx",
+      "Linux",
+      "AWS",
+    ],
+  },
+  {
+    title: "AI / Data",
+    skills: [
+      "Pandas",
+      "NumPy",
+      "Scikit-learn",
+      "PyTorch",
+      "OpenAI",
+      "TensorFlow",
+      "Keras",
+      "OpenCV",
+      "Hugging Face",
+      "Transformers",
+      "spaCy",
+      "XGBoost",
+      "LangChain",
+      "Weights & Biases",
+      "Jupyter Notebook",
+      "RStudio",
+    ],
+  },
+  {
+    title: "Currently Exploring",
+    skills: [
+      "LLMs",
+      "Privacy Engineering",
+      "Data Analytics",
+      "Product Engineering",
+      "RAG",
+      "Agentic Systems",
+      "Federated Learning",
+      "Vector Databases",
+      "MLOps",
+      "Edge AI",
+      "Distributed Systems",
+      "Computer Vision",
+    ],
+  },
+] as const;
 
 export const achievements = [
   {
@@ -191,16 +291,126 @@ export type Credential = {
   href?: string;
 };
 
-export const certifications: Credential[] = [];
+export const certifications: Credential[] = [
+  {
+    title: "Software Engineer Certification",
+    issuer: "HackerRank",
+    detail:
+      "Certification listed on resume, covering software engineering fundamentals and implementation ability.",
+  },
+  {
+    title: "Applied Skills: Fabric",
+    issuer: "Microsoft",
+    detail:
+      "Applied Skills credential listed on resume, focused on Microsoft Fabric and data platform workflows.",
+  },
+];
 
 export type ExperienceItem = {
   role: string;
   organization: string;
   date: string;
   detail: string;
+  location?: string;
+  bullets?: string[];
 };
 
-export const experience: ExperienceItem[] = [];
+export const education = [
+  {
+    school: "Queens College CUNY",
+    location: "Queens, NY, USA",
+    degree: "BSc Computer Science",
+    date: "August 2024 - Present",
+    detail: "GPA: 3.6",
+  },
+  {
+    school: "Drexel University",
+    location: "Philadelphia, PA, USA",
+    degree: "BSc Computer Science (Transfer)",
+    date: "Expected September 2026 - May 2029",
+    detail: "Transfer path listed on resume.",
+  },
+] as const;
+
+export const experience: ExperienceItem[] = [
+  {
+    role: "Technical Intern",
+    organization: "QC Makerspace",
+    location: "Queens College, NY, USA",
+    date: "September 2025 - Present",
+    detail:
+      "Technical prototyping, fabrication support, embedded systems troubleshooting, and makerspace operations.",
+    bullets: [
+      "Built and tested functional prototypes using 3D printing and microcontrollers, reducing iteration time for student engineering projects by 30 percent.",
+      "Diagnosed and resolved hardware and embedded systems issues across Arduino, Raspberry Pi, and related electronics platforms.",
+      "Operated and maintained advanced fabrication equipment including laser cutters and CNC machines for rapid prototyping.",
+    ],
+  },
+  {
+    role: "Research Analyst Intern",
+    organization: "Nixxe Solutions",
+    location: "NJ, USA · Remote",
+    date: "September 2024 - August 2025",
+    detail:
+      "Research and technical evaluation across automation, data systems, backend infrastructure, and implementation-oriented workflows.",
+    bullets: [
+      "Analyzed emerging technologies in automation, data systems, and backend infrastructure.",
+      "Produced technical evaluations of software tools, computational workflows, and system architectures.",
+      "Collaborated with development teams to assess automation concepts and backend designs.",
+    ],
+  },
+  {
+    role: "Independent Quantitative Research",
+    organization: "Algorithmic Trading Strategy Development",
+    date: "April 2024 - Present",
+    detail:
+      "Rule-based market strategy research with Pine Script, backtesting, drawdown analysis, and robustness evaluation.",
+    bullets: [
+      "Designed and implemented rule-based trading strategies in Pine Script for momentum, trend-following, and signal-confirmation logic.",
+      "Built backtesting workflows to evaluate entry and exit conditions, drawdown behavior, and risk-adjusted performance.",
+      "Analyzed performance outcomes to compare strategy robustness under changing market conditions and identify failure points.",
+    ],
+  },
+];
+
+export type ResumeProject = {
+  title: string;
+  detail: string;
+  href?: string;
+};
+
+export const resumeProjects: ResumeProject[] = [
+  {
+    title: "Cornell Digital Agriculture Hackathon 2026 — FarmLink",
+    detail:
+      "Designed FarmLink, a platform concept for reconnecting nutrient cycles by linking agricultural waste, nutrient recovery, and byproduct reuse between farms.",
+  },
+  {
+    title: "HopperHacks 2026 Stony Brook University — MedTrack",
+    detail:
+      "Built MedTrack, a medication management prototype supporting scheduling, adherence tracking, and medication history visualization; awarded Best UI/UX.",
+    href: "https://github.com/sdg5-hub/HopperHackathon2026",
+  },
+  {
+    title: "YHack 2026 — WeaveWise",
+    detail:
+      "Engineered a pipeline using OCR and LLM-based parsing to convert garment-tag images into structured textile data, then built a React + MongoDB Atlas system for item and wardrobe sustainability insights.",
+    href: "https://github.com/sdg5-hub/YaleHacks",
+  },
+];
+
+export const extracurriculars = [
+  {
+    title: "Event Coordinator",
+    organization: "QC Computer Science Club",
+    date: "September 2024 - Current",
+  },
+  {
+    title: "Research Assistant",
+    organization: "Distributed Systems",
+    date: "October 2025 - February 2026",
+  },
+] as const;
 
 export const systemsThoughts = [
   {
@@ -287,6 +497,8 @@ export const contact = {
   email: identity.email,
   channels: [
     { label: "Email", href: `mailto:${identity.email}`, handle: identity.email },
+    { label: "Phone", href: `tel:${identity.phone.replace(/[^\d+]/g, "")}`, handle: identity.phone },
+    { label: "Resume", href: profileLinks.resume, handle: "PDF" },
     { label: "GitHub", href: profileLinks.github, handle: "@sdg5-hub" },
     { label: "LinkedIn", href: profileLinks.linkedin, handle: "/in/saiyid-o-gilani" },
     { label: "Instagram", href: profileLinks.instagram, handle: "@saiyidogilani" },

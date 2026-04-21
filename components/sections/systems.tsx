@@ -24,7 +24,7 @@ export function Systems() {
 
       <div className="relative mx-auto max-w-7xl px-6 md:px-10">
         <SectionHeader
-          index="04"
+          index="05"
           kicker="Operating System · Principles"
           title="Systems I think about before I write the first line."
           subtitle="Before I commit to a design, I commit to what it refuses to do. These are the operating principles that shape every project I take seriously."

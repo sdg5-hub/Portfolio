@@ -6,6 +6,7 @@ import { LoadingScreen } from "@/components/sections/loading-screen";
 import { Hero } from "@/components/sections/hero";
 import { About } from "@/components/sections/about";
 import { Projects } from "@/components/sections/projects";
+import { Skills } from "@/components/sections/skills";
 import { Pages } from "@/components/sections/pages";
 import { Systems } from "@/components/sections/systems";
 import { Timeline } from "@/components/sections/timeline";
@@ -68,6 +69,7 @@ export default function Home() {
             <Hero />
             <About />
             <Projects />
+            <Skills />
             <Pages />
             <Systems />
             <Timeline />

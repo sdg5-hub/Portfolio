@@ -34,7 +34,7 @@ export function Personal() {
     <section id="personal" className="relative py-32 md:py-48">
       <div className="relative mx-auto max-w-6xl px-6 md:px-10">
         <SectionHeader
-          index="08"
+          index="09"
           kicker="Dimension · Margin Notes"
           title="Beyond the résumé."
           subtitle="A few things about how I actually spend the quiet hours."
