@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   title: "Saiyid Gilani — Builder. Systems Thinker.",
   description:
     "Saiyid Gilani — CS & EE at Drexel. Builder of NGSP, MedTrack, and WeaveWise. Trustworthy AI, local-first health tools, and sustainability systems.",
-  metadataBase: new URL("https://sdg5-hub.github.io"),
+  metadataBase: new URL("https://saiyidogilani.com"),
   openGraph: {
     title: "Saiyid Gilani",
     description:
