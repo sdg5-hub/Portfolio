@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Global foundation.
+ * Every choice here is about a *quiet* premium feel: deep ink base, selection
+ * in the signal cyan, hairline dividers, and a film-grain overlay to kill the
+ * plastic sheen that pure digital blacks get.
+ */
+
+:root {
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: "Instrument Serif", "Libre Caslon Text", Georgia, serif;
+  --font-mono: "JetBrains Mono", "Geist Mono", ui-monospace, monospace;
+
+  --ink-950: #050507;
+  --ink-900: #0a0a0c;
+  --signal: #7df9ff;
+  --ember: #e9b872;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+html,
+body {
+  background: var(--ink-950);
+  color: #f2f2ee;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Subtle, premium selection — never neon by accident. */
+::selection {
+  background: rgba(125, 249, 255, 0.2);
+  color: #fafaf7;
+}
+
+/* Custom scrollbar — thin, quiet, unobtrusive. */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(125, 249, 255, 0.25);
+}
+
+/* Utility layer */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .hairline {
+    background-image: linear-gradient(
+      to right,
+      transparent,
+      rgba(255, 255, 255, 0.12),
+      transparent
+    );
+    height: 1px;
+  }
+  .mask-fade-b {
+    mask-image: linear-gradient(to bottom, black 60%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent);
+  }
+  .mask-fade-r {
+    mask-image: linear-gradient(to right, black 70%, transparent);
+    -webkit-mask-image: linear-gradient(to right, black 70%, transparent);
+  }
+  .noise {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.04;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.8 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .text-gradient-bone {
+    background: linear-gradient(
+      180deg,
+      #fafaf7 0%,
+      #fafaf7 55%,
+      #a6a6a0 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .text-gradient-signal {
+    background: linear-gradient(90deg, #fafaf7 0%, #7df9ff 50%, #fafaf7 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  /* An almost-invisible crosshair used under the hero. */
+  .bg-crosshair {
+    background-image:
+      linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+}
+
+/* Keep focus rings accessible without being ugly. */
+:focus-visible {
+  outline: 1px solid rgba(125, 249, 255, 0.6);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Respect reduced motion — disable non-essential animation. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
