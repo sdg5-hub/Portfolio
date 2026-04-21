@@ -293,16 +293,21 @@ export type Credential = {
 
 export const certifications: Credential[] = [
   {
-    title: "Software Engineer Certification",
+    title: "Software Engineer Intern",
     issuer: "HackerRank",
+    date: "March 25, 2026",
     detail:
-      "Certification listed on resume, covering software engineering fundamentals and implementation ability.",
+      "HackerRank role certification test for software engineering internship readiness. Certificate ID: 07FDF83FD884.",
+    href: "https://www.hackerrank.com/certificates/07fdf83fd884",
   },
   {
-    title: "Applied Skills: Fabric",
+    title:
+      "Implement a Real-Time Intelligence Solution with Microsoft Fabric",
     issuer: "Microsoft",
+    date: "March 25, 2026",
     detail:
-      "Applied Skills credential listed on resume, focused on Microsoft Fabric and data platform workflows.",
+      "Microsoft Applied Skills credential. Online verifiable. Credential ID: FBC3811D7AB93207.",
+    href: "https://learn.microsoft.com/en-us/users/saiyidgilani-8990/",
   },
 ];
 
