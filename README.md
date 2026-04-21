@@ -137,3 +137,40 @@ All copy lives in `lib/content.ts` so you can iterate without touching component
 ---
 
 Authored, not assembled.
+
+## Current Portfolio Additions
+
+This repository is now published as **Portfolio** under the `sdg5-hub` GitHub account:
+
+- GitHub repo: `https://github.com/sdg5-hub/Portfolio`
+- GitHub profile used for live activity: `https://github.com/sdg5-hub`
+
+### Featured project links
+
+- NGSP: `https://github.com/sdg5-hub/PrincetonSite26`
+- MedTrack: `https://github.com/sdg5-hub/HopperHackathon2026`
+- WeaveWise: `https://github.com/sdg5-hub/YaleHacks`
+
+### Published assets
+
+- Resume PDF: `public/resume.pdf`, served at `/resume.pdf`
+- NGSP paper PDF: `public/papers/ngsp.pdf`, served at `/papers/ngsp.pdf`
+- Future gallery images: `public/gallery/`
+
+### Certification links
+
+- HackerRank Software Engineer Intern certificate: `https://www.hackerrank.com/certificates/07fdf83fd884`
+- Microsoft Learn profile / Applied Skills credential: `https://learn.microsoft.com/en-us/users/saiyidgilani-8990/`
+
+### Added site areas
+
+- `/gallery` - photo gallery page ready for future uploads
+- `/blog` - updates and writing page ready for future posts
+- `/credentials` - resume, education, certifications, experience, projects, extracurriculars, and skills
+
+### Update reminders
+
+- Add new photos by placing image files in `public/gallery/` and adding entries to `galleryItems` in `lib/content.ts`.
+- Add blog posts by updating `blogPosts` in `lib/content.ts`.
+- Update certifications, experience, education, and resume projects in `lib/content.ts`.
+- Keep PDF filenames stable unless the links in `lib/content.ts` are updated too.
