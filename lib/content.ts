@@ -11,7 +11,7 @@ export const identity = {
   institution: "Computer Science & Electrical Engineering — Drexel University",
   location: "Philadelphia, PA",
   email: "sg3949@drexel.edu",
-  resumeEmail: "saiyidosamah.gilani31@qmail.cuny.edu",
+  resumeEmail: "sg3949@drexel.edu",
   phone: "+1 (856) 472-5001",
   tagline:
     "I build systems that earn their trust at the intersection of AI, engineering, and consequence.",
@@ -322,18 +322,18 @@ export type ExperienceItem = {
 
 export const education = [
   {
+    school: "Drexel University",
+    location: "Philadelphia, PA, USA",
+    degree: "BSc Computer Science & Electrical Engineering",
+    date: "Expected September 2026 - May 2029",
+    detail: "Transfer pathway focused on software systems, electrical engineering, and trustworthy AI.",
+  },
+  {
     school: "Queens College CUNY",
     location: "Queens, NY, USA",
     degree: "BSc Computer Science",
-    date: "August 2024 - Present",
-    detail: "GPA: 3.6",
-  },
-  {
-    school: "Drexel University",
-    location: "Philadelphia, PA, USA",
-    degree: "BSc Computer Science (Transfer)",
-    date: "Expected September 2026 - May 2029",
-    detail: "Transfer path listed on resume.",
+    date: "August 2024 - May 2026",
+    detail: "GPA: 3.6; computer science coursework before transfer to Drexel.",
   },
 ] as const;
 

@@ -48,9 +48,11 @@ export default function CredentialsPage() {
               {identity.phone}
             </span>
           </div>
-          <div className="mt-3 text-xs text-bone-500">
-            Resume source email: {identity.resumeEmail}
-          </div>
+          {identity.resumeEmail !== identity.email && (
+            <div className="mt-3 text-xs text-bone-500">
+              Resume source email: {identity.resumeEmail}
+            </div>
+          )}
         </div>
         <a
           href={profileLinks.resume}
