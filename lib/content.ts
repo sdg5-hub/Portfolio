@@ -166,7 +166,7 @@ export const projects = [
     stack: ["Python", "local model routing", "experiments", "paper", "demo"],
     links: [
       { label: "GitHub", href: "https://github.com/sdg5-hub/PrincetonSite26" },
-      { label: "Paper PDF", href: "/papers/ngsp.pdf" },
+      { label: "Paper PDF", href: "/yc/asclepius.pdf" },
     ],
   },
   {
