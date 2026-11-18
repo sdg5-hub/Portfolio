@@ -12,7 +12,6 @@ export const identity = {
   location: "Philadelphia, PA",
   email: "sg3949@drexel.edu",
   resumeEmail: "sg3949@drexel.edu",
-  phone: "+1 (856) 472-5001",
   tagline:
     "I build systems that earn their trust at the intersection of AI, engineering, and consequence.",
 };
@@ -502,7 +501,6 @@ export const contact = {
   email: identity.email,
   channels: [
     { label: "Email", href: `mailto:${identity.email}`, handle: identity.email },
-    { label: "Phone", href: `tel:${identity.phone.replace(/[^\d+]/g, "")}`, handle: identity.phone },
     { label: "Resume", href: profileLinks.resume, handle: "PDF" },
     { label: "GitHub", href: profileLinks.github, handle: "@sdg5-hub" },
     { label: "LinkedIn", href: profileLinks.linkedin, handle: "/in/saiyid-o-gilani" },

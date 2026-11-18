@@ -6,7 +6,6 @@ import {
   FileDown,
   GraduationCap,
   Mail,
-  Phone,
   Users,
 } from "lucide-react";
 import { PageShell } from "@/components/ui/page-shell";
@@ -42,10 +41,6 @@ export default function CredentialsPage() {
             <span className="inline-flex items-center gap-2">
               <Mail className="h-4 w-4 text-signal" />
               {identity.email}
-            </span>
-            <span className="inline-flex items-center gap-2">
-              <Phone className="h-4 w-4 text-signal" />
-              {identity.phone}
             </span>
           </div>
           {identity.resumeEmail !== identity.email && (
